@@ -9,6 +9,11 @@
  * 
  * @author: Jack Doyle, jack@greensock.com
  */
+var window = {}
+	, navigator = { userAgent: "" }
+	, dummyElement = { style: {}, getElementsByTagName: function() { return [] } }
+	, document = { createElement: function() { return dummyElement } };
+
 (function(window, moduleName) {
 
 		"use strict";
